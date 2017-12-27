@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorting Drag and Drop with Combobox UI</title>
+
+	<!-- SCRIPTS -->
+    <script src="lib/jquery-3.1.1.js"></script>
+    <script src="http://johnny.github.io/jquery-sortable/js/jquery-sortable-min.js"></script>
+    <script src="lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="scripts/app.js"></script>
+    
+
+	<!-- CSS -->
+	<link href="lib/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css" media="screen">
+	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+	<link href="styles/styles.css" rel="stylesheet" type="text/css" media="screen" />
+
+	<!-- CDN -->
+	<!-- <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
+	<!-- <script src="https://cdn.rawgit.com/abdmob/x2js/master/xml2json.js"></script> -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+	<!-- SCRIPTS IN PAGE  -->
+
+</head>
+<body>
+<h1>Sortable List</h1>
+<p>Keyboard based sorting: change the number using text input or up/down arrows and hit enter or the update button.</p>
+<form id="sort-it">
+    <ol>
+      <li>Pear 
+        <label for="Pear">New order:</label>
+        <input id="Pear" name="Pear" type="number" min="1">
+      </li>
+        
+      <li>Carrot 
+        <label for="Carrot">New order:</label>
+        <input id="Carrot" name="Carrot" type="number" min="1">
+      </li>
+        
+      <li>Banana
+        <label for="Banana">New order:</label>
+        <input id="Banana" name="Banana" type="number" min="1">
+      </li>
+        
+      <li>Apple 
+        <label for="Apple">New order:</label>
+        <input id="Apple" name="Apple" type="number" min="1">
+      </li>
+        
+      <li>Orange 
+        <label for="Orange">New order:</label>
+        <input id="Orange" name="Orange" type="number" min="1">
+      </li>
+    </ol>
+      <input type="submit" id="manual-sort" name="manual-sort" value="Update">
+</form>
+
+</html>
