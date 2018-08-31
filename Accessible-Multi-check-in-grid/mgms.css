@@ -1,0 +1,16 @@
+body {font-size: large; font-family: arial, helvetica, san-serif; background-color: #ffffff; color: #000000;}
+
+div[role="main"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    margin-top: 50px;
+}
+
+div[role="checkbox"] {text-align: center;}
+
+table {width: 75;}
+table, td, th {border: .1em solid black; border-collapse: collapse;}
+th {font-weight: bold; padding: 1em;}
+td {padding: 1em; font-weight: normal;}

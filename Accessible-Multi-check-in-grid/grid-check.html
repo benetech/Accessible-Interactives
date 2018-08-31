@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- Specify a language for the page. -->
+<html lang="en">
+<head>
+	
+	<!-- Specify a unique title for the page. -->
+	<title>Match Grid Multiple Selection Item</title>
+	<meta charset="UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="viewport" content="width=device-width">	
+	<script src="jquery.js" type="text/javascript"></script>
+	<script type="text/javascript" src="mgms.js"></script>
+	<link href="mgms.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+   	<!-- Specify a "main" region using predefined WAI-ARIA role. -->
+	<div id="textchar" role="main">
+	
+		<!-- Create a custom "Question" region using a WAI-ARIA "region" role and an "aria-label" attribute. -->
+		<div role="region" aria-label="Question">
+			<p>Indicate which of the pollutants below is a greenhouse gas by clicking on the box to the right.</p>
+		</div>
+		<!-- Create a custom "Response" region using a WAI-ARIA "region" role and an "aria-label" attribute. -->
+		<div role="region" aria-label="Response">
+			<!-- If you are using a "table" element for layout purposes, give it a "role" attribute of presentation. A better alternative is to use 
+			CSS for layout. A table was used here to mimic actual item rendering -->			
+			<table role="presentation">			
+                <thead>
+					<!-- Prevent announcement of these column headings ahead of checkboxes by using "aria-hidden='true'." -->
+                    <tr aria-hidden="true">   
+                        <th id="chdg1">Pollutant</th>
+						<th id="chdg2">Is a Greenhouse Gas</th> 
+						<th id="chdg3">is helpful for environment</th> 
+						    
+                    </tr>  
+                </thead>
+                <tbody>
+					<tr>
+						<!-- Prevent announcement of this row heading ahead of checkboxes by using "aria-hidden='true'." -->
+                        <th id="rhdg1" aria-hidden="true">														
+							Sulfur dioxide (SO<sub>2</sub>)
+						</th>
+                        <td>
+							<!-- Checkboxes are created using a "checkbox" role. Allow the user to tab between them. Use the "aria-checked" 
+							attribute to indicate the current selected state. Each is labeled by the first column headings, plus the row heading, plus 
+							the second column heading (via "aria-labelledby"). -->
+                            <div role="checkbox" id="cb1" tabindex="0" aria-checked="false" aria-labelledby="chdg1 rhdg1 chdg2">
+								<!-- Prevent announcement of images by using a blank "alt" attribute and "aria-hidden='true'." -->
+								<img src="unchecked.jpg" alt="" aria-hidden="true" />
+							</div>
+						</td>
+						<td>
+							<!-- Checkboxes are created using a "checkbox" role. Allow the user to tab between them. Use the "aria-checked" 
+							attribute to indicate the current selected state. Each is labeled by the first column headings, plus the row heading, plus 
+							the second column heading (via "aria-labelledby"). -->
+                            <div role="checkbox" id="cc1" tabindex="0" aria-checked="false" aria-labelledby="chdg1 rhdg1 chdg3">
+								<!-- Prevent announcement of images by using a blank "alt" attribute and "aria-hidden='true'." -->
+								<img src="unchecked.jpg" alt="" aria-hidden="true" />
+							</div>
+                        </td>
+                    </tr>
+                    <tr>
+						<!-- Prevent announcement of this row heading ahead of checkboxes by using "aria-hidden='true'." -->
+                        <th id="rhdg2" aria-hidden="true">
+							Carbon dioxide (CO<sub>2</sub>)
+						</th>
+                        <td>
+                            <div role="checkbox" id="cb2" tabindex="0" aria-checked="false" aria-labelledby="chdg1 rhdg2 chdg2">
+								<img src="unchecked.jpg" alt="" aria-hidden="true" />
+							</div>
+						</td>
+						<td>
+								<div role="checkbox" id="cc2" tabindex="0" aria-checked="false" aria-labelledby="chdg1 rhdg2 chdg3">
+									<img src="unchecked.jpg" alt="" aria-hidden="true" />
+								</div>
+							</td>
+						
+                    </tr>
+                    <tr>
+						<!-- Prevent announcement of this row heading ahead of checkboxes by using "aria-hidden='true'." -->
+                        <th id="rhdg3" aria-hidden="true">
+							Methane (CH<sub>4</sub>)
+						</th>
+                        <td>
+                            <div role="checkbox" id="cb3" tabindex="0" aria-checked="false" aria-labelledby="chdg1 rhdg3 chdg2">
+								<img src="unchecked.jpg" alt="" aria-hidden="true" />
+							</div>
+						</td>
+						<td>
+								<div role="checkbox" id="cc3" tabindex="0" aria-checked="false" aria-labelledby="chdg1 rhdg30 chdg3">
+									<img src="unchecked.jpg" alt="" aria-hidden="true" />
+								</div>
+							</td>
+                    </tr>					
+                </tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
+

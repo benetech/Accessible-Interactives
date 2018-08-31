@@ -1,0 +1,78 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<title>Drag and Drop Example</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link href="drag-drop.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="drag-and-drop.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">   
+            <h1>Drag and Drop Example</h1>
+        </div>
+    
+    </header> 
+    <br><br>
+    <div class="container">
+        <div role="region" aria-label="Question">
+			<p>Match each of the following items from Main Basket with the related basket.</p>
+		</div>
+    </div>
+    <div class="container-fluid">
+   
+   
+   <br><br>
+   <div class="row" id="dragdrop" role="region" aria-label="Response">
+     <div class="col-lg-6 " >
+         <section aria-label="All Items Region">
+         <h2 id="Maih">Main Basket</h2>
+            <ul id="Mai" >
+                <li class="draggable">Orange</li>
+                <li class="draggable">Beetroot</li>
+                <li class="draggable">Spinach</li>
+                <li class="draggable">Apple</li>
+                <li class="draggable">Banana</li>
+                <li class="draggable">Pepper</li>
+                <li class="draggable">Pear</li>
+                <li class="draggable">Pumpkin</li>
+            </ul>
+         </section>
+     </div>
+    
+    
+     <div class="col-lg-6 ">
+         <section aria-label="Matching Item Region">
+             <div  aria-live="polite">
+         <h2 id="Fruh">Fruit Basket</h2>
+        <ul id="Fru" role="alert" aria-live="polite">
+            <li class="empty"></li>
+        </ul>
+        </div>
+        <div aria-live="polite">
+        <h2 id="Vegh">Vegetable Basket</h2>
+        <ul id="Veg" >
+        <li class="empty"></li>
+        </ul>
+        </div>
+         </section>
+     </div>
+     
+     
+     
+
+
+
+
+   </div>
+   
+  
+     
+   
+
+
+
+</body>
+</html>
