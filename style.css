@@ -36,25 +36,30 @@ table {
   margin: 8px;
 }
 
-/* the bubble element, added inside the toggletip live region */
 
 .details-bubble {
+  filter: drop-shadow(16px 16px 10px black);
   display: inline-block;
+  
   position: absolute;
   left: 100%;
-  top: 0;
+  top: -1em;
   width: 20em;
   padding: 0.5rem;
-  background: tan;
+  background: cornsilk;
   color: black;
   border-color: black;
   border-style: solid;
-  margin: 8px;
+  margin-left: 8px;
   font-family: sans-serif;
   font-weight: normal;
   text-align: left;
 }
 
+button  {
+  float: right;
+}
 
 
+h3 {margin-top: 0;}
  

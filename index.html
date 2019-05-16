@@ -21,10 +21,31 @@
 function closeDetail(el) {
     el.closest("details").toggleAttribute("open");
 }
+function fixdetails() {
+    var matches = document.querySelectorAll("details");
+    
+  matches.forEach(function(element, i) {
+ 
+
+element.addEventListener("toggle", event => {
+  if (element.open) {
+  
+      matches.forEach(function(aelement,j) {
+          if (element==aelement) {}
+          else
+          {aelement.removeAttribute("open");}
+      })
+
+  } else {
+ 
+  }
+});
+});
+}
 </script>
         
     </head>
-	<body>
+	<body onload="fixdetails();">
 		<h1>DIAGRAM Center: Accessible Interactives Library</h1>
 	
 		<h2>Audio and Video</h2>
@@ -39,8 +60,11 @@ function closeDetail(el) {
                     
                     <details class="details-container">
                             <summary>Accessible Audio/Video Player</summary>
-                            <span  class="details-bubble"><button aria-label="close" onclick="closeDetail(this);">X</button>
-                            <h3>What is this?</h3>
+                            <span  class="details-bubble">
+                              
+                            <button aria-label="close" onclick="closeDetail(this);">X</button> 
+                             <h3>What is this?  </h3>
+                             blah blah blah
                             </span>
                             </details></th>
                 <td><a href="https://github.com/ableplayer">Able Player</a></td>
