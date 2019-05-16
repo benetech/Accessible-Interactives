@@ -36,6 +36,9 @@ table {
   margin: 8px;
 }
 
+dt {
+  display: inline;
+}
 
 .details-bubble {
   filter: drop-shadow(16px 16px 10px black);
