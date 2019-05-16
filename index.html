@@ -61,10 +61,10 @@ element.addEventListener("toggle", event => {
                     <details class="details-container">
                             <summary>Accessible Audio/Video Player</summary>
                             <span  class="details-bubble">
-                              
-                            <button aria-label="close" onclick="closeDetail(this);">X</button> 
-                             <h3>What is this?  </h3>
-                             blah blah blah
+                                <button aria-label="close" onclick="closeDetail(this);">X</button> 
+                                <h3>Able Player</h3>
+                                
+                                <p>A fully accessible cross-browser HTML5 media player designed from the ground up to meet the diverse needs and preferences of all users.</p>
                             </span>
                             </details></th>
                 <td><a href="https://github.com/ableplayer">Able Player</a></td>
@@ -85,21 +85,22 @@ element.addEventListener("toggle", event => {
 
              <tr>
                 <th scope="row">
-                    <details class="details-container"><summary>Drag and Drop 2018</summary>
-                        <span  class="details-bubble"><button aria-label="close" onclick="closeDetail(this);">X</button><h3>What is this?</h3>In computer graphical user interfaces, drag and drop is a pointing device gesture in which the user selects a virtual object by "grabbing" it and dragging it to a different location or onto another virtual object. 
-                            In general, it can be used to invoke many kinds of actions, or create various types of associations between two abstract objects.</span>
-                        </details></th>
-                <td><a href="https://github.com/diagram-codesprint/2018-a11y-code-samples/tree/master/Accessible-DragAndDrop-Demo-without-Aria-grabbed">Drag and Drop GitHub 2018</a></td>
-                <td><img class="typeicon" src="images/html5.svg" alt="Uses HTML"><img class="typeicon" src="images/css3.svg" alt="Uses CSS"><img class="typeicon" src="images/js.svg" alt="Uses Javascript"></td>
-                <td><a href="Accessible-DragAndDrop-Demo-without-Aria-grabbed/drag-drop.html">Drag and Drop Demo 2018</a></td>
-                <td><a href="https://github.com/alia11y">Ifran Ali</a></td>
-            </tr>
-             <tr>
-                <th scope="row">
                     <details class="details-container">
                             <summary>Drag and Drop 2017</summary>
                             <span  class="details-bubble"><button aria-label="close" onclick="closeDetail(this);">X</button>
-                            <h3>What is this?</h3>
+                                <h3>Drag &amp; Drop Overview</h3>
+                                
+                                <p>In computer graphical user interfaces, drag and drop is a pointing device gesture in which the user selects a virtual object by "grabbing" it and dragging it to a different location or onto another virtual object. 
+                                In general, it can be used to invoke many kinds of actions, or create various types of associations between two abstract objects.</p>
+                                
+                                <h3>Interactions addressed</h3>
+                                <ul>
+                                    <li>Categorization</li>
+                                    <li>Matching</li>
+                                    <li>Ordering</li>
+                                    <li>Sorting Lists</li>
+                                </ul>
+                                
                             </span>
                             </details>
                 </th>
@@ -108,15 +109,36 @@ element.addEventListener("toggle", event => {
                 <td><a href="DragAndDrop/drag-and-drop.html">Drag-and-Drop Demo 2017</a></td>
                 <td><a href="https://github.com/sinabahram">Sina Bahram</a>, <a href="https://github.com/clapierre">Charles LaPierre</a>, <a href="https://github.com/jasonjgw">Jason White</a></td>
             </tr>
+
+            <tr>
+                <th scope="row">
+                    <details class="details-container"><summary>Drag and Drop 2018</summary>
+                        <span  class="details-bubble"><button aria-label="close" onclick="closeDetail(this);">X</button>    <h3>Drag &amp; Drop Overview</h3>
+                            
+                            <p>In computer graphical user interfaces, drag and drop is a pointing device gesture in which the user selects a virtual object by "grabbing" it and dragging it to a different location or onto another virtual object. 
+                            In general, it can be used to invoke many kinds of actions, or create various types of associations between two abstract objects.</p>
+                           <h3>Interactions addressed</h3>
+                            <ul>
+                                <li>Single Source List -  Multiple Desinations</li>
+                             </ul>
+                     </span>
+                    </details>
+                </th>
+                <td><a href="https://github.com/diagram-codesprint/2018-a11y-code-samples/tree/master/Accessible-DragAndDrop-Demo-without-Aria-grabbed">Drag and Drop GitHub 2018</a></td>
+                <td><img class="typeicon" src="images/html5.svg" alt="Uses HTML"><img class="typeicon" src="images/css3.svg" alt="Uses CSS"><img class="typeicon" src="images/js.svg" alt="Uses Javascript"></td>
+                <td><a href="Accessible-DragAndDrop-Demo-without-Aria-grabbed/drag-drop.html">Drag and Drop Demo 2018</a></td>
+                <td><a href="https://github.com/alia11y">Ifran Ali</a></td>
+            </tr>
             
         
             <tr>
                 <th scope="row">
     
                     <details class="details-container">
-                            <summary>ARIA Radio #1</summary>
+                            <summary>ARIA Radio - TabIndex</summary>
                             <span  class="details-bubble"><button aria-label="close" onclick="closeDetail(this);">X</button>
-                            <h3>What is this?</h3>
+                                <h3>Radio Button Example</h3>
+                                <p>Radio button group using roving tabindex for managing keyboard focus.</p>
                             </span>
                             </details>
                 </th>
@@ -129,9 +151,10 @@ element.addEventListener("toggle", event => {
                 <th scope="row">
                     
                     <details class="details-container">
-                            <summary>ARIA Radio Button #2</summary>
+                            <summary>ARIA Radio - activedecendant</summary>
                             <span  class="details-bubble"><button aria-label="close" onclick="closeDetail(this);">X</button>
-                            <h3>What is this?</h3>
+                                <h3>Radio Button Example (aria-activedescendant)</h3>
+                                <p>Radio button group using aria-activedescendant for managing keyboard focus.</p>
                             </span>
                             </details>
                 </th>
@@ -143,21 +166,23 @@ element.addEventListener("toggle", event => {
               <tr>
                 <th scope="row">
                     <details class="details-container">
-                            <summary>ARIA Tabs #1</summary>
+                            <summary>ARIA Tabs: Automatic Activation</summary>
                             <span  class="details-bubble"><button aria-label="close" onclick="closeDetail(this);">X</button>
-                            <h3>What is this?</h3>
+                                <h3>Tabs with Automatic Activation</h3>
+                                <p>A tab is automatically activated and its associated panel is displayed when the tab receives focus. Tabs should only be automatically activated in circumstances where panels can be displayed instantly.</p>
                             </span>
                             </details>
                 </th>
                 <td><a href="https://github.com/jongund/aria-practices/tree/master/examples/tabs/tabs-1">Tabs1 GitHub</a></td>
-                 <td><img class="typeicon" src="images/html5.svg" alt="Uses HTML"><img class="typeicon" src="images/css3.svg" alt="Uses CSS"><img class="typeicon" src="images/js.svg" alt="Uses Javascript"></td>
-              <td><a href="https://rawgit.com/jongund/aria-practices/slider/examples/tabs/tabs-1/tabs.html">Tab Example #1</a></td>
+                 
+                <td><img class="typeicon" src="images/html5.svg" alt="Uses HTML"><img class="typeicon" src="images/css3.svg" alt="Uses CSS"><img class="typeicon" src="images/js.svg" alt="Uses Javascript"></td>
+                <td><a href="https://rawgit.com/jongund/aria-practices/slider/examples/tabs/tabs-1/tabs.html">Tab Example #1</a></td>
                <td><a href="https://github.com/jongund">Jon Gunderson</a></td>
             </tr>
               <tr>
                 <th scope="row">
                     <details class="details-container">
-                            <summary>ARIA Tabs #2</summary>
+                            <summary>ARIA Tabs: </summary>
                             <span  class="details-bubble"><button aria-label="close" onclick="closeDetail(this);">X</button>
                             <h3>What is this?</h3>
                             </span>
