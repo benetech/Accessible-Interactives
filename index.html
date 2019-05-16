@@ -16,6 +16,12 @@
 
   gtag('config', 'UA-20293107-2');
 </script>
+<script>
+// Close open details
+function closeDetail(el) {
+    el.closest("details").toggleAttribute("open");
+}
+</script>
         
     </head>
 	<body>
@@ -40,16 +46,20 @@
 		<h2>Basic Patterns</h2>
 
         <table>
-            <th scope="col">Name</th>
-            <th scope="col">GitHub Repository</th>
-            <th scope="col">Type</th>
-            <th scope="col">Demo / Download</th>
-            <th scope="col">Contributor(s)</th>
+            <th  scope="col">Name</th>
+            <th  scope="col">GitHub Repository</th>
+            <th  scope="col">Type</th>
+            <th  scope="col">Demo / Download</th>
+            <th  scope="col">Contributor(s)</th>
 
              <tr>
-                <th scope="row">Drag and Drop</th>
+                <th scope="row">
+                    <details class="details-container"><summary>Drag and Drop</summary>
+                        <span  class="details-bubble"><button aria-label="close" onclick="closeDetail(this);">X</button><h3>What is this?</h3>In computer graphical user interfaces, drag and drop is a pointing device gesture in which the user selects a virtual object by "grabbing" it and dragging it to a different location or onto another virtual object. 
+                            In general, it can be used to invoke many kinds of actions, or create various types of associations between two abstract objects.</span>
+                        </details></th>
                 <td><a href="https://github.com/diagram-codesprint/2018-a11y-code-samples/tree/master/Accessible-DragAndDrop-Demo-without-Aria-grabbed">Drag and Drop GitHub 2018</a></td>
-                <td>HTML, CSS and JavaScript</td>
+                <td><img class="typeicon" src="images/html5.svg" alt="Uses HTML"><img class="typeicon" src="images/css3.svg" alt="Uses CSS"><img class="typeicon" src="images/js.png" alt="Uses Javascript"></td>
                 <td><a href="Accessible-DragAndDrop-Demo-without-Aria-grabbed/drag-drop.html">Drag and Drop Demo 2018</a></td>
                 <td><a href="https://github.com/alia11y">Ifran Ali</a></td>
             </tr>

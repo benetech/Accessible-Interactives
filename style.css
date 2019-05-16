@@ -1,9 +1,17 @@
-   table {
+body {
+  font-family:  Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+table {
      border-collapse: collapse;
+     width: 90%;
+     margin-left: 5%;
    }
 
+   th[scope|="col"] {width: 20%;}
+
    th, td {
-     padding: 0.25rem;
+     padding: 8px;
+     margin: 8px;
      text-align: left;
      border: 1px solid #ccc;
    }
@@ -19,3 +27,34 @@
    tbody tr:nth-child(odd) {
      background: #eee;
    }
+
+.typeicon {height: 2em; padding-left: 1em;}
+
+ .details-container {
+  position: relative;
+  display: inline-block;
+  margin: 8px;
+}
+
+/* the bubble element, added inside the toggletip live region */
+
+.details-bubble {
+  display: inline-block;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 20em;
+  padding: 0.5rem;
+  background: tan;
+  color: black;
+  border-color: black;
+  border-style: solid;
+  margin: 8px;
+  font-family: sans-serif;
+  font-weight: normal;
+  text-align: left;
+}
+
+
+
+ 
