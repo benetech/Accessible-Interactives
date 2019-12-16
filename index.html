@@ -415,7 +415,7 @@ element.addEventListener("toggle", event => {
         <h2>Date Pickers</h2>
          <table>
                 <th scope="col">Name</th>
-                <th scope="col">GitHub Repository</th>
+                <th scope="col">Design Pattern</th>
                 <th scope="col">Type</th>
                 <th scope="col">Demo / Download</th>
                 <th scope="col">Contributor(s)</th>
@@ -434,7 +434,63 @@ element.addEventListener("toggle", event => {
                 <td><a href="https://dequeuniversity.com/library/aria/date-pickers/sf-date-picker">date picker demo &amp; code</a></td>
             <td><a href="https://dequeuniversity.com">deque University</a></td>
             </tr>
-        </table>
+              <tr>
+                <th scope="row">
+                    <details class="details-container">
+                            <summary>Modal Date Picker</summary>
+                            <span  class="details-bubble"><button aria-label="close" onclick="closeDetail(this);">X</button>
+                            <h3>ARIA Modal Date Picker</h3>
+                            <p>The example includes a date input field and a button that opens a date picker that implements the ARIA dialog design pattern. The dialog contains a calendar that uses the grid pattern to present buttons that enable the user to choose a day from the calendar. Choosing a date from the calendar closes the dialog and populates the date input field. When the dialog is opened, if the input field is empty, or does not contain a valid date, then the current date is focused in the calendar. Otherwise, the focus is placed on the day in the calendar that matches the value of the date input field.</p>
+                            </span>
+                            </details>
+                </th>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices/#dialog_modal">WAI-ARIA Modal Dialog / Date Picker</a></td>
+                <td><img class="typeicon" src="images/HTML5.svg" alt="Uses HTML"><img class="typeicon" src="images/CSS3.svg" alt="Uses CSS"><img class="typeicon" src="images/js.svg" alt="Uses Javascript"></td>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/dialog-modal/datepicker-dialog.html">Modal Date Picker Example</a></td>
+                <td>W3C WAI-ARIA</td>
+            </tr>
+      </table>
+        
+        <h2>EPUB</h2>
+         <table>
+                <th scope="col">Name</th>
+                <th scope="col">GitHub Repository</th>
+                <th scope="col">Type</th>
+                <th scope="col">Demo / Download</th>
+                <th scope="col">Contributor(s)</th>
+        
+            <tr>
+                <th scope="row">
+                    <details class="details-container">
+                            <summary>Ace (Accessibility Checker for EPUB)</summary>
+                            <span  class="details-bubble"><button aria-label="close" onclick="closeDetail(this);">X</button>
+                            <h3>Ace Checker</h3>
+                                <p>Ace, the Accessibility Checker for EPUB, is a tool developed by the DAISY Consortium to assist with the evaluation of accessibility features of EPUB publications.</p>
+                            </span>
+                            </details>
+                </th>
+                <td><a href="https://github.com/daisy/ace">Ace GitHub</a></td>
+                <td><img class="typeicon" src="images/epub.png" alt="EPUB"><img class="typeicon" src="images/app.png" alt="Application"></td>
+                <td><a href="https://github.com/daisy/ace/releases">Download Ace</a></td>
+            <td><a href="https://daisy.org">DAISY Consortium</a></td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    <details class="details-container">
+                            <summary>EPUB Check</summary>
+                            <span  class="details-bubble"><button aria-label="close" onclick="closeDetail(this);">X</button>
+                            <h3>EPUB Check</h3>
+                                <p>EPUBCheck is a tool to validate the conformance of EPUB publications against the EPUB specifications. EPUBCheck can be run as a standalone command-line tool or used as a Java library.</p>
+                            </span>
+                            </details>
+                </th>
+                <td><a href="https://github.com/w3c/epubcheck">EPUB Check GitHub</a></td>
+                <td><img class="typeicon" src="images/epub.png" alt="EPUB"><img class="typeicon" src="images/app.png" alt="Application"></td>
+                <td><a href="https://github.com/w3c/epubcheck/releases">Download EPUBCheck</a></td>
+            <td>W3C &amp; DAISY Consortium</td>
+            </tr>
+        </table>    
+        
         <h2>Images</h2>     
         <table>
                 <th scope="col">Name</th>
@@ -526,6 +582,31 @@ element.addEventListener("toggle", event => {
         </table>
 
         <h2>Popups and Dialogs</h2>
+        
+        
+        <table>
+                <th scope="col">Name</th>
+                <th scope="col">Design Pattern</th>
+                <th scope="col">Type</th>
+                <th scope="col">Demo / Download</th>
+                <th scope="col">Contributor(s)</th>
+             <tr>
+                <th scope="row">
+                    <details class="details-container">
+                            <summary>Modal Dialog</summary>
+                            <span  class="details-bubble"><button aria-label="close" onclick="closeDetail(this);">X</button>
+                            <h3>ARIA Modal Dialog</h3>
+                            <p>A dialog is a window overlaid on either the primary window or another dialog window. Windows under a modal dialog are inert. That is, users cannot interact with content outside an active dialog window. Inert content outside an active dialog is typically visually obscured or dimmed so it is difficult to discern, and in some implementations, attempts to interact with the inert content cause the dialog to close.</p>
+                            </span>
+                            </details>
+                </th>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices/#dialog_modal">WAI-ARIA Modal Dialog</a></td>
+                <td><img class="typeicon" src="images/HTML5.svg" alt="Uses HTML"><img class="typeicon" src="images/CSS3.svg" alt="Uses CSS"><img class="typeicon" src="images/js.svg" alt="Uses Javascript"></td>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/dialog-modal/dialog.html">Modal Dialog Example</a></td>
+                <td>W3C WAI-ARIA</td>
+            </tr>
+        </table>
+       
             
         <h2>Tab Panels and Accordians</h2>
             
@@ -567,7 +648,7 @@ element.addEventListener("toggle", event => {
                         <details class="details-container">
                                 <summary>Multi-Check in Grid</summary>
                                 <span  class="details-bubble"><button aria-label="close" onclick="closeDetail(this);">X</button>
-                                <h3>What is this?</h3>
+                                <h3>Multi-Check Grid</h3>
                                 <p>To use the Multi-Check in Grid allows you to specify a "main" region using predefined WAI-ARIA role and reate a custom "Response" region using a WAI-ARIA "region" role and an "aria-label" attribute. If you are using a "table" element for layout purposes, give it a "role" attribute of presentation. A better alternative is to use CSS for layout. Prevent announcement of these column headings ahead of checkboxes by using "aria-hidden='true'."</p>
                                 </span>
                                 </details>
@@ -728,6 +809,8 @@ element.addEventListener("toggle", event => {
         <dd>This code works as a WordPress plugin.</dd>
         <dt><img class="typeicon" src="images/component.svg" alt="Component"></dt>
         <dd>This code is a component that can be embedded within web applications.</dd>
+        <dt><img class="typeicon" src="images/epub.png" alt="EPUB"></dt>
+        <dd>EPUB specific</dd>
     </dl>
 </footnote>
 <hr/>
