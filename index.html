@@ -580,7 +580,38 @@ element.addEventListener("toggle", event => {
                 <th scope="col">Type</th>
                 <th scope="col">Demo / Download</th>
                 <th scope="col">Contributor(s)</th>
-             <tr>
+            <tr>
+                <th scope="row">
+                    <details class="details-container">
+                            <summary>Alerts</summary>
+                            <span  class="details-bubble"><button aria-label="close" onclick="closeDetail(this);">X</button>
+                            <h3>ARIA Alert</h3>
+                            <p>An alert is an element that displays a brief, important message in a way that attracts the user's attention without interrupting the user's task. Dynamically rendered alerts are automatically announced by most screen readers, and in some operating systems, they may trigger an alert sound. It is important to note that, at this time, screen readers do not inform users of alerts that are present on the page before page load completes.</p>
+                            </span>
+                            </details>
+                </th>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices/#alert">ARIA Alert</a></td>
+                <td><img class="typeicon" src="images/HTML5.svg" alt="Uses HTML"><img class="typeicon" src="images/CSS3.svg" alt="Uses CSS"><img class="typeicon" src="images/js.svg" alt="Uses Javascript"></td>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/alert/alert.html">Alert Example</a></td>
+                <td><a href="https://www.w3.org/WAI/ARIA/">W3C WAI-ARIA</a></td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    <details class="details-container">
+                            <summary>Alert and Message Dialogs</summary>
+                            <span  class="details-bubble"><button aria-label="close" onclick="closeDetail(this);">X</button>
+                            <h3>Alert Dialog</h3>
+                            <p>An alert dialog is a modal dialog that interrupts the user's workflow to communicate an important message and acquire a response. Examples include action confirmation prompts and error message confirmations. The alertdialog role enables assistive technologies and browsers to distinguish alert dialogs from other dialogs so they have the option of giving alert dialogs special treatment, such as playing a system alert sound.</p>
+                            </span>
+                            </details>
+                </th>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices/#alertdialog">ARIA Alert Dialog</a></td>
+                <td><img class="typeicon" src="images/HTML5.svg" alt="Uses HTML"><img class="typeicon" src="images/CSS3.svg" alt="Uses CSS"><img class="typeicon" src="images/js.svg" alt="Uses Javascript"></td>
+                <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/dialog-modal/alertdialog.html">Alert Dialog Example</a></td>
+                <td><a href="https://www.w3.org/WAI/ARIA/">W3C WAI-ARIA</a></td>
+            </tr>
+         
+            <tr>
                 <th scope="row">
                     <details class="details-container">
                             <summary>Modal Dialog</summary>
@@ -595,6 +626,7 @@ element.addEventListener("toggle", event => {
                 <td><a href="https://www.w3.org/TR/wai-aria-practices/examples/dialog-modal/dialog.html">Modal Dialog Example</a></td>
                 <td><a href="https://www.w3.org/WAI/ARIA/">W3C WAI-ARIA</a></td>
             </tr>
+
         </table>
        
             
