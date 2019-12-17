@@ -659,7 +659,23 @@ element.addEventListener("toggle", event => {
                 <td><a href="https://www.w3.org/WAI/ARIA/">W3C WAI-ARIA</a></td>
             </tr>
             
-            <tr>
+        <tr>
+                <th scope="row">
+                    <details class="details-container">
+                            <summary>Summary / Details (Show/Hide)</summary>
+                            <span  class="details-bubble"><button aria-label="close" onclick="closeDetail(this);">X</button>
+                            <h3>HTML Summary / Details</h3>
+                            <p>The HTML Disclosure Summary element (&lt;summary&gt;) element specifies a summary, caption, or legend for a &lt;details&gt; element's disclosure box. Clicking the &lt;summary&gt; element toggles the state of the parent &lt;details&gt; element open and closed.</p>
+                            </span>
+                            </details>
+                </th>
+                <td><a href="https://html.spec.whatwg.org/#the-details-element">Disclosure Summary / Detailselement</a></td>
+                <td><img class="typeicon" src="images/HTML5.svg" alt="Uses HTML"><img class="typeicon" src="images/CSS3.svg" alt="Uses CSS"><img class="typeicon" src="images/js.svg" alt="Uses Javascript"></td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary">Example Disclosure (Show/Hide) for Navigation Menu</a></td>
+                <td><a href="https://developer.mozilla.org/en-US/">Mozilla Developers Network</a></td>
+            </tr>
+
+             <tr>
                 <th scope="row">
                     <details class="details-container">
                             <summary>Modal Dialog</summary>
