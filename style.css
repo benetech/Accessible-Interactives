@@ -36,9 +36,6 @@ table {
   margin: 8px;
 }
 
-dt {
-  display: inline;
-}
 
 .details-bubble {
   filter: drop-shadow(16px 16px 10px black);
@@ -65,4 +62,22 @@ button  {
 
 
 h3 {margin-top: 0;}
+
+dl {
+    border: 3px double #ccc;
+    padding: 0.5em;
+  }
+dt {
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+  }
+
+dd {
+    margin: 0 0 0 140px;
+    padding: 0 0 2em 0;
+  }
+
  
