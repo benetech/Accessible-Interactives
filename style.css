@@ -28,7 +28,9 @@ table {
      background: #eee;
    }
 
-.typeicon {height: 2em; padding-left: 1em;}
+.typeicon {height: 2em; padding-left: 1em; }
+
+dt {text-align: left;}
 
  .details-container {
   position: relative;
