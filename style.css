@@ -54,6 +54,7 @@ table {
   font-family: sans-serif;
   font-weight: normal;
   text-align: left;
+  z-index: 1;
 }
 
 button  {
