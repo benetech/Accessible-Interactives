@@ -17,11 +17,11 @@ table {
    }
 
      th {
-       text-align: center;
+       text-align: left;
      }
 
      tbody td:nth-child(2) {
-       text-align: right;
+       text-align: left;
      }
 
    tbody tr:nth-child(odd) {
