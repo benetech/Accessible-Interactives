@@ -59,6 +59,10 @@ dt {text-align: left;}
   z-index: 1;
 }
 
+.align_right { float: right; }
+
+.align_left { text-align: left; }
+
 button  {
   float: right;
 }
